@@ -19,4 +19,17 @@ router.get('/acm', function(req, res, next) {
 });
 
 
+router.get('/gallery', function(req, res, next) {
+  res.render('gallery', { page : 'gallery', title: 'About' });
+});
+
+
+router.get('/book', function(req, res, next) {
+  res.render('book', { page : 'book', title: 'About' });
+});
+
+router.get('/track', function(req, res, next) {
+  res.render('track', { page : 'track', title: 'About' });
+});
+
 module.exports = router;
