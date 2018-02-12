@@ -14,5 +14,9 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { page : 'contact', title: 'About' });
 });
 
+router.get('/acm', function(req, res, next) {
+  res.render('acm', { page : 'acm', title: 'About' });
+});
+
 
 module.exports = router;
